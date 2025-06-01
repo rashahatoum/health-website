@@ -43,6 +43,7 @@ header nav {
     align-items: center;
     justify-content: space-between;
     padding: 0px 4.8611vw;
+    z-index: 10;
 }
 
 .logo {
@@ -107,6 +108,7 @@ nav ul a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap:20px;
 }
 
 .yoga,
@@ -166,7 +168,7 @@ nav ul a {
 }
 
 .yoga-girl:hover {
-    transform: translateY(60px);
+    transform: translateY(75px);
 }
 
 /*--------------------services----------------------*/
@@ -235,6 +237,9 @@ nav ul a {
 .container {
     height: 667px;
     background-image: url(../imgs/forest-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 16px;
     color: white;
     text-align: center;
@@ -482,8 +487,8 @@ footer .logo {
     }
 
     footer nav ul {
-        width: 50%;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
         margin-bottom: 36px;
     }
 }
@@ -500,7 +505,6 @@ footer .logo {
 
     .header-img {
         width: 100%;
-        flex-wrap: wrap;
         justify-content: center;
         gap: 28px;
     }
@@ -541,7 +545,7 @@ footer .logo {
     }
 
     .services-group {
-        width: 429.5px;
+        max-width: 429.5px;
     }
 
     /*-------------------------contact------------------------*/
